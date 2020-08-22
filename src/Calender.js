@@ -18,7 +18,7 @@ function CreateCalender({ list }) {
   };
 
   const getFirstDay = (date) => {
-    return new Date(date[0], date[1], 1).getDay();
+    return new Date(date[0], date[1] - 1, 1).getDay();
   };
 
   const makeRows = (date) => {
