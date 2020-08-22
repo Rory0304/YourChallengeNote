@@ -17,15 +17,16 @@ function Challenge() {
     {
       id: 1,
       title: "코딩 테스트 100문제",
-      start: "2020-07-01",
-      end: "2020-07-28",
+      start: [2020, 7, 1, 3],
+      end: [2020, 7, 29, 3],
+      week: 4,
       active: false
     },
     {
       id: 2,
       title: "영어 뉴스 따라 읽기",
-      start: "2020-07-01",
-      end: "2020-08-18",
+      start: [2020, 7, 1, 3],
+      end: [2020, 8, 19, 3],
       week: 6,
       active: false
     }
@@ -60,13 +61,8 @@ function Challenge() {
           today.getMonth(),
           today.getDate(),
           today.getDay()
-        ].join("-"),
-        end: [
-          end.getFullYear(),
-          end.getMonth(),
-          end.getDate(),
-          end.getDay()
-        ].join("-"),
+        ],
+        end: [end.getFullYear(), end.getMonth(), end.getDate(), end.getDay()],
         week,
         active: false
       };

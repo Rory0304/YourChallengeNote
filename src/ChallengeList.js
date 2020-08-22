@@ -4,8 +4,8 @@ function Challenge({ list, onToggle }) {
   return (
     <div className="challenge-list" style={{ cursor: "pointer" }}>
       <p onClick={() => onToggle(list.id)}>{list.title}</p>
-      <p>{list.start}</p>
-      <p>{list.end}</p>
+      <p>{list.start.join("/")}</p>
+      <p>{list.end.join("/")}</p>
     </div>
   );
 }
